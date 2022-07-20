@@ -1,10 +1,11 @@
+import React from "react";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css"
 
-const Navbar = () => {
+export default function Navbar() {
     return (
         <div className={styles.navbar}>
-            <div>
+            <div className={styles.links}>
                 <Link href="/"> Home</Link>
                 <Link href="/cv">About Me</Link>
                 <Link href="/contact">Contact</Link>
@@ -13,4 +14,3 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
